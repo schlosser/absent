@@ -61,10 +61,15 @@ strong {
 
 @media screen and (max-width: $phone-landscape-max) {
   h1, %h1 {
-    font-size: 1.75rem;
+    &.display {
+      font-size: 1.75rem;
+    }
   }
 
-  h4, %h4 {
-    font-size: 1.5rem;
+  h2, %h2 {
+    &.display {
+      font-size: 1rem;
+      line-height: 1.61803399;
+    }
   }
 }

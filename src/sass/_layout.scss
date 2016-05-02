@@ -22,8 +22,9 @@ $content-width: 42rem;
 section {
   background-color: $white;
   position: relative;
-  transform-style: preserve-3d;
   z-index: 200;
+  // padding: 3rem 0;
+  transform: translateZ(0)
   // background-image: linear-gradient(
   //   to right,
   //   rgba($white, 0) 0%,
@@ -93,6 +94,10 @@ blockquote, aside {
   img {
     width: 100%;
   }
+
+  p {
+    font-size: 0.75rem;
+  }
 }
 
 @media screen and (max-width: $phone-landscape-max) {
@@ -101,8 +106,21 @@ blockquote, aside {
     width: 100%;
   }
 
+  blockquote, aside {
+    @include clearfix;
+    margin: 0 0 1rem;
+    position: relative;
+    padding: 0;
+
+    &.left, &.right {
+      width: 100%;
+      float: auto;
+      margin: 0 0 1rem;
+    }
+  }
+
   section {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
