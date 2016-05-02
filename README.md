@@ -1,7 +1,7 @@
 Tracking Truancy
 ================
 
-Examining trancy and chronic absenteeism in the New York City Public Schools
+Examining truancy and chronic absenteeism in New York City Public Schools
 
 ## First-Time Setup
 

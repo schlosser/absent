@@ -19,6 +19,7 @@ var rename = require('gulp-rename');
 var replace = require('gulp-replace');
 var sass = require('gulp-sass');
 var scsslint = require('gulp-scss-lint');
+var shell = require('gulp-shell');
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var yaml = require('js-yaml');
@@ -144,9 +145,9 @@ gulp.task('clean', function(cb) {
 
 gulp.task('deploy', ['build:optimized'], function() {
   gulp.src('')
-    .pipe(shell('scp -r dist/* root@minimill.co:/srv/work/private_html/TITLE/'))
+    .pipe(shell('scp -r dist/* dan:/srv/truancy.schlosser.io/public_html/'))
     .on('finish', function() {
-      process.stdout.write('Deployed to work.minimill.co/TITLE/');
+      process.stdout.write('Deployed to https://truancy.schlosser.io/.\n');
     });
 });
 

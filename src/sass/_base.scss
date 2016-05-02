@@ -1,17 +1,22 @@
 html, body {
   background-color: $white;
   color: $black;
-  font-family: $sans;
-  font-size: 16px;
-  font-weight: $light;
+  font-family: $serif;
+  font-size: 18px;
+  font-weight: $regular;
   height: 100%;
-  line-height: 1.5;
+  line-height: 1.61803399;
   position: relative;
 }
 
-a, a:hover {
-  color: inherit;
+a {
+  color: $blue;
   text-decoration: none;
+
+  &:hover, &:visited {
+    color: $blue;
+    text-decoration: underline;
+  }
 }
 
 img {

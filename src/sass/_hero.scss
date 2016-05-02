@@ -1,0 +1,34 @@
+.hero {
+  box-sizing: border-box;
+  background-color: transparent;
+  color: $white;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+
+  .scrim {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba($black, 0) 0%,
+      rgba($black, 0.35) 65%,
+      rgba($black, 0.6) 100%);
+    width: 100%;
+    z-index: 150;
+  }
+
+  header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+// background-image: url('/img/ferris.jpg');
+// background-repeat: no-repeat;
+// background-size: cover;
+// background-position: center center;

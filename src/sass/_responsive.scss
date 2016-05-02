@@ -1,24 +1,30 @@
 @media screen and (min-width: $xxl-desktop-min) {
   html, body {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
 @media screen and (max-width: $xl-desktop-max) {
   html, body {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: $desktop-max) {
   html, body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: $tablet-landscape-max) {
   html, body {
-    font-size: 15px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: $tablet-portrait-max) {
+  html, body {
+    font-size: 14px;
   }
 }
 
@@ -30,7 +36,7 @@
 
 @media screen and (max-width: $phone-landscape-max) {
   html, body {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .hide-mobile {

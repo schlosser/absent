@@ -1,0 +1,54 @@
+.main {
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  width: 100%;
+}
+
+.middle-background-layer, .deep-background-layer, .close-background-layer {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  li {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    opacity: 0.5;
+    transform: scale(0);
+    transition: 1s ease transform;
+  }
+}
+
+.close-background-layer {
+  transform: translateZ(-1px) scale(2);
+  z-index: 150;
+
+  li {
+    background-color: $blue;
+  }
+}
+
+.middle-background-layer {
+  transform: translateZ(-2px) scale(3);
+  z-index: 100;
+
+  li {
+    background-color: $orange;
+  }
+}
+
+.deep-background-layer {
+  background-color: $black;
+  transform: translateZ(-3px) scale(4);
+  z-index: 50;
+
+  li {
+    background-color: $blue;
+  }
+}

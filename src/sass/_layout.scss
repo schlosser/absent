@@ -1,11 +1,98 @@
-$content-width: 58.75rem;
+$content-width: 42rem;
+
+.main {
+  width: 100%;
+}
 
 .content {
   @include clearfix;
+  box-sizing: border-box;
   margin: 0 auto;
   max-width: $content-width;
-  padding: 0 0.625rem;
+  padding: 2rem 0;
+  position: relative;
   width: 90%;
+  z-index: 200;
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+section {
+  background-color: $white;
+  position: relative;
+  transform-style: preserve-3d;
+  z-index: 200;
+  // background-image: linear-gradient(
+  //   to right,
+  //   rgba($white, 0) 0%,
+  //   rgba($white, 0.8) 20%,
+  //   rgba($white, 0.8) 80%,
+  //   rgba($white, 0) 100%);
+}
+
+blockquote {
+  padding: 0 3rem;
+
+  &:before, &:after {
+    background-color: rgba($blue, 0.2);
+    border-radius: 50%;
+    content: ' ';
+    display: block;
+    position: absolute;
+    z-index: 210;
+  }
+
+  &:before {
+    height: 8rem;
+    left: -2rem;
+    top: -1rem;
+    width: 8rem;
+  }
+
+  &:after {
+    height: 5rem;
+    right: 0rem;
+    bottom: -1rem;
+    width: 5rem;
+  }
+}
+
+blockquote, aside {
+  @include clearfix;
+  margin: 0 0 1rem;
+  position: relative;
+
+  &.left {
+    padding: 0;
+    width: 30rem;
+    float: right;
+    margin: 0 -10rem 0.5rem 1rem;
+  }
+
+  &.right {
+    padding: 0;
+    width: 30rem;
+    float: left;
+    margin: 0 1rem 0.5rem -10rem;
+  }
+
+  h3 {
+    @extend %h3;
+    color: $orange;
+    position: relative;
+    z-index: 220;
+  }
+
+  cite {
+    display: block;
+    margin-left: 2rem;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: $phone-landscape-max) {
