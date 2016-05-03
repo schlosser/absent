@@ -1,0 +1,144 @@
+.sixth-graders {
+  width: 100%;
+
+  li {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    background-color: $black;
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    border-radius: 50%;
+    opacity: 0.5;
+
+    &.absent {
+      background-color: $orange;
+    }
+  }
+}
+
+figure ul {
+  @include clearfix;
+  padding: 0 0 1rem;
+}
+
+.lost-cash {
+  li:not(.explanation) {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    background-color: $green;
+    width: 5%;
+    height: 0;
+    padding-bottom: 5%;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+
+  .explanation {
+    position: relative;
+    width: 40%;
+    padding-bottom: 25%;
+    height: 0;
+    float: right;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+
+    p {
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 2rem;
+      bottom: 2rem;
+      right: 0;
+    }
+  }
+}
+
+.juveniles {
+  width: 100%;
+
+  li {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    background-color: $black;
+    width: 5%;
+    height: 0;
+    padding-bottom: 5%;
+    border-radius: 50%;
+    opacity: 0.5;
+
+    &.ca {
+      background-color: $orange;
+    }
+
+    &.s {
+      opacity: 1;
+    }
+  }
+
+
+  .key {
+    padding-bottom: 0.5rem;
+
+    div {
+      @include clearfix;
+    }
+
+    li {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.decoration {
+  padding: 5rem 0;
+  position: relative;
+  height: 10rem;
+
+  li {
+    border-radius: 50%;
+    opacity: 0.5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  .one {
+    background-color: $orange;
+    height: 10rem;
+    width: 10rem;
+    transform: translate(-7rem, -6rem);
+  }
+
+  .two {
+    background-color: $blue;
+    height: 9rem;
+    width: 9rem;
+    transform: translate(-3rem, -6rem);
+  }
+
+  .three {
+    background-color: $blue;
+    height: 8rem;
+    width: 8rem;
+    transform: translate(-4rem, -2rem);
+  }
+
+  .end {
+    left: 50%;
+    top: 50%;
+    color: $white;
+    font-weight: $bold;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  a, a:hover, a:visited {
+    color: $white;
+    border-color: $white;
+  }
+}

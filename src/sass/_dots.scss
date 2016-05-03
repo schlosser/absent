@@ -1,7 +1,8 @@
 .main {
   perspective: 1px;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
   height: 100vh;
   width: 100%;
   position: relative;

@@ -61,6 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
     step();
   };
 
+
+
   // Create the dots.
   setTimeout(function() {
     for (var i = 0; i < dots.length; i++) {
@@ -81,9 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     main.removeEventListener('scroll', noPeek, false);
   }, 3000);
-
-
-  console.log(peekTimeoutId);
 
   main.addEventListener('scroll', noPeek, false);
 });

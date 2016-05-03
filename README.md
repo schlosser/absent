@@ -1,7 +1,7 @@
-Tracking Truancy
-================
+Connecting the Dots
+===================
 
-Examining truancy and chronic absenteeism in New York City Public Schools
+#### Chronic Absenteeism under the Data Looking Glass
 
 ## First-Time Setup
 

@@ -7,15 +7,23 @@ html, body {
   height: 100%;
   line-height: 1.61803399;
   position: relative;
+
+  ::selection {
+    // hack to fix opacity in selection.
+    background-color: rgba($orange, 0.99);
+    color: $white;
+  }
 }
 
 a {
   color: $blue;
+  border-bottom: 1px dashed $blue;
   text-decoration: none;
 
   &:hover, &:visited {
     color: $blue;
-    text-decoration: underline;
+    border-bottom: 1px solid $blue;
+    text-decoration: none;
   }
 }
 
@@ -29,4 +37,8 @@ img {
     content: ' ';
     display: block;
   }
+}
+
+.clearfix {
+  @include clearfix;
 }
