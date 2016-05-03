@@ -1,9 +1,31 @@
-Connecting the Dots
-===================
+[Connecting the Dots][article]
+==============================
 
-#### Chronic Absenteeism under the Data Looking Glass
+#### Chronic Absenteeism in New York City Public Schools
 
-## First-Time Setup
+## Team
+
+- Hari Devaraj, sd2920
+- Edo Roth, enr2116
+- Dan Schlosser, drs2161
+- Samantha Wiener, srw2168
+- Robert Ying, ry2242
+
+## Background
+
+We chose to create a [website][article] to tell the story of chronic absenteeism in New York City Public Schools. This narrative is comprised of interviews with professionals in the Department of Education, the Department of Probation, teachers, principals, and administrators. 
+
+We structured the website to reflect our approach to this project, combining anecdotes from our interviews with data from our research. We felt it important to represent the data we found across New York City in a visual format that illustrates some of the factors we took into consideration in our process.  We highlighted the percentage of families on public assistance and school attendance in different zip codes.  We chose to display this data visually to allow readers to engage with the data we had available, in order to encourage them to use our work as a platform for future research.
+
+We didn't feel that the data we collected was conclusive in regards to revealing causal factors for chronic absenteeism. For this reason, we chose to focus our article on content from our interviews. We highlighted a few of the core conclusions we reached and some of the guiding insights from our reporting using striking large, orange pull-quotes.
+
+Finally, we used HTML circles to visualize some of our more shocking statistics.
+
+## Data Analysis:
+
+See the `data` folder for more information on how to run our data analytic scripts on your machine.
+
+## Website: First-Time Setup
 
 Install [npm][npm-install]. Then, install gulp:
 
@@ -45,7 +67,7 @@ Watchs for changes in local files and rebuilds parts of the site as necessary, i
 
 Runs `gulp watch` in the background, and serves the `dist` directory at `localhost:3000` with automatic reloading using [Browsersync][browsersync].
 
-## About
+## About this Repo
 
 ### Features
 
@@ -80,6 +102,7 @@ gulp serve
     └── templates/    # Handlebars HTML files, one per page on the site.
 ```
 
+[article]: https://truancy.schlosser.io/
 [autoprefixer]: https://css-tricks.com/autoprefixer/
 [browsersync]: http://www.browsersync.io/
 [cssnano]: http://cssnano.co/
