@@ -102,7 +102,7 @@ gulp serve
     └── templates/    # Handlebars HTML files, one per page on the site.
 ```
 
-[article]: https://truancy.schlosser.io/
+[article]: https://absent.schlosser.io/
 [autoprefixer]: https://css-tricks.com/autoprefixer/
 [browsersync]: http://www.browsersync.io/
 [cssnano]: http://cssnano.co/
